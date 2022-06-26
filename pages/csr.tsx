@@ -10,7 +10,7 @@ const Csr:NextPage = () => {
     useEffect(() => {
         const getTasks = async () => {
             const { data:tasks} = await supabase
-            .from("todos")
+            .from("Todos")
             .select("*")
             .order("created_at",{ascending:true})
         setTasks(tasks as Task[])
