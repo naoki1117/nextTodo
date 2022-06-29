@@ -45,9 +45,9 @@ const Auth: NextPage = () => {
             required
             className='my-2 rounded border border-grey px-3 py-2 text-sm placeholder-gray-500 focus:border-indigo-500 focus:outline-none'
             placeholder='Password'
-            value={email}
+            value={password}
             onChange={(e) => {
-              setEmail(e.target.value)
+              setPassword(e.target.value)
             }}        
           />
         </div>

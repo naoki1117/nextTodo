@@ -1,3 +1,5 @@
+import { type } from "os"
+
 export type Task = {
     id: string
     created_at: string
@@ -11,3 +13,5 @@ export type Notice = {
     content:string
     user_id:string | undefined
 }
+export type EditedTask = Omit<Task, "created_at" | "user_id">
+export type EditedNotice = Omit<Notice, "created_at" | "user_id">
